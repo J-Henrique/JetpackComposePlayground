@@ -41,8 +41,7 @@ fun ImageCard(
                 .aspectRatio(3f / 2f)
         )
         Column(
-            modifier = Modifier
-                .padding(6.dp)
+            modifier = Modifier.padding(16.dp)
         ) {
             Text(
                 text = title,
