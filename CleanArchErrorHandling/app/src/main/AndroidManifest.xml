@@ -14,7 +14,11 @@
         android:theme="@style/Theme.CleanArchErrorHandling"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".MainActivity"
+=======
+            android:name=".presentation.MainActivity"
+>>>>>>> 14a6368 (Clean Arch error handling)
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CleanArchErrorHandling">
