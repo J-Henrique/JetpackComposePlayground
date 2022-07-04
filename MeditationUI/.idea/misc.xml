@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/compose-model-1656682390719.xml" value="0.2748316498316498" />
+        <entry key="../../../../../../layout/compose-model-1656683431180.xml" value="0.25" />
+        <entry key="../../../../../../layout/compose-model-1656688543934.xml" value="0.67" />
+        <entry key="../../../../../../layout/compose-model-1656688563561.xml" value="0.33" />
+        <entry key="../../../../../../layout/compose-model-1656688656811.xml" value="0.25" />
+        <entry key="../../../../../../layout/compose-model-1656695766365.xml" value="0.33" />
+        <entry key="../../../../../../layout/compose-model-1656696368494.xml" value="0.33" />
+        <entry key="../../../../../../layout/compose-model-1656706699310.xml" value="0.22" />
+        <entry key="../../../../../../layout/compose-model-1656706699319.xml" value="0.4009259259259259" />
+        <entry key="../../../../../../layout/compose-model-1656793065506.xml" value="0.33" />
+        <entry key="../../../../../../layout/compose-model-1656935047193.xml" value="0.25" />
+        <entry key="../../../../../../layout/compose-model-1656936773148.xml" value="2.0" />
+        <entry key="../../../../../../layout/compose-model-1656937828078.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/ic_bubble.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_headphone.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_moon.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_music.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_play.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_profile.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_videocam.xml" value="0.11" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
