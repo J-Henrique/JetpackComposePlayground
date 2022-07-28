@@ -192,7 +192,9 @@ fun PokemonList(
         }
         items(itemCount) {
             if (it >= itemCount - 1 && !endReached && !isLoading && !isSearching) {
-                viewModel.loadPokemonPaginated()
+                LaunchedEffect(key1 = true) {
+                    viewModel.loadPokemonPaginated()
+                }
             }
             PokedexRow(rowindex = it, entries = pokemonList, navController = navController)
         }
