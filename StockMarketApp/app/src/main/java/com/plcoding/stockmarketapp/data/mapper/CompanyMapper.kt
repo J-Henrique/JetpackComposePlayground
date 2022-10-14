@@ -9,7 +9,7 @@ fun CompanyListingEntity.toCompanyListing() = CompanyListing(
     exchange = exchange
 )
 
-fun CompanyListing.toCompanyListing() = CompanyListingEntity(
+fun CompanyListing.toCompanyListingEntity() = CompanyListingEntity(
     name = name,
     symbol = symbol,
     exchange = exchange
