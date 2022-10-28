@@ -40,74 +40,74 @@ fun CompanyInfoScreen(
                overflow = TextOverflow.Ellipsis,
                modifier = Modifier.fillMaxWidth()
            )
-//           state.company?.let { company ->
-//               Text(
-//                   text = company.name,
-//                   fontWeight = FontWeight.Bold,
-//                   fontSize = 18.sp,
-//                   overflow = TextOverflow.Ellipsis,
-//                   modifier = Modifier.fillMaxWidth()
-//               )
-//               Spacer(modifier = Modifier.height(8.dp))
-//               Text(
-//                   text = company.symbol,
-//                   fontStyle = FontStyle.Italic,
-//                   fontSize = 14.sp,
-//                   modifier = Modifier.fillMaxWidth()
-//               )
-//               Spacer(modifier = Modifier.height(8.dp))
-//               Divider(
-//                   modifier = Modifier
-//                       .fillMaxWidth()
-//               )
-//               Spacer(modifier = Modifier.height(8.dp))
-//               Text(
-//                   text = "Industry: ${company.industry}",
-//                   fontSize = 14.sp,
-//                   overflow = TextOverflow.Ellipsis,
-//                   modifier = Modifier.fillMaxWidth()
-//               )
-//               Spacer(modifier = Modifier.height(8.dp))
-//               Text(
-//                   text = "Country: ${company.country}",
-//                   fontSize = 14.sp,
-//                   overflow = TextOverflow.Ellipsis,
-//                   modifier = Modifier.fillMaxWidth()
-//               )
-//               Spacer(modifier = Modifier.height(8.dp))
-//               Divider(
-//                   modifier = Modifier
-//                       .fillMaxWidth()
-//               )
-//               Spacer(modifier = Modifier.height(8.dp))
-//               Text(
-//                   text = company.description,
-//                   fontSize = 12.sp,
-//                   modifier = Modifier.fillMaxWidth()
-//               )
-//               if (state.stockInfos.isNotEmpty()) {
-//                   Spacer(modifier = Modifier.height(16.dp))
-//                   Text(text = "Market Summary")
-//                   Spacer(modifier = Modifier.height(32.dp))
-//                   StockChart(
-//                       infos = state.stockInfos,
-//                       modifier = Modifier
-//                           .fillMaxWidth()
-//                           .height(250.dp)
-//                           .align(CenterHorizontally)
-//                   )
-//               }
-//           }
+           state.company?.let { company ->
+               Text(
+                   text = company.name,
+                   fontWeight = FontWeight.Bold,
+                   fontSize = 18.sp,
+                   overflow = TextOverflow.Ellipsis,
+                   modifier = Modifier.fillMaxWidth()
+               )
+               Spacer(modifier = Modifier.height(8.dp))
+               Text(
+                   text = company.symbol,
+                   fontStyle = FontStyle.Italic,
+                   fontSize = 14.sp,
+                   modifier = Modifier.fillMaxWidth()
+               )
+               Spacer(modifier = Modifier.height(8.dp))
+               Divider(
+                   modifier = Modifier
+                       .fillMaxWidth()
+               )
+               Spacer(modifier = Modifier.height(8.dp))
+               Text(
+                   text = "Industry: ${company.industry}",
+                   fontSize = 14.sp,
+                   overflow = TextOverflow.Ellipsis,
+                   modifier = Modifier.fillMaxWidth()
+               )
+               Spacer(modifier = Modifier.height(8.dp))
+               Text(
+                   text = "Country: ${company.country}",
+                   fontSize = 14.sp,
+                   overflow = TextOverflow.Ellipsis,
+                   modifier = Modifier.fillMaxWidth()
+               )
+               Spacer(modifier = Modifier.height(8.dp))
+               Divider(
+                   modifier = Modifier
+                       .fillMaxWidth()
+               )
+               Spacer(modifier = Modifier.height(8.dp))
+               Text(
+                   text = company.description,
+                   fontSize = 12.sp,
+                   modifier = Modifier.fillMaxWidth()
+               )
+               if (state.stockInfos.isNotEmpty()) {
+                   Spacer(modifier = Modifier.height(16.dp))
+                   Text(text = "Market Summary")
+                   Spacer(modifier = Modifier.height(32.dp))
+                   StockChart(
+                       infos = state.stockInfos,
+                       modifier = Modifier
+                           .fillMaxWidth()
+                           .height(250.dp)
+                           .align(CenterHorizontally)
+                   )
+               }
+           }
        }
     }
-//    Box(
-//        modifier = Modifier.fillMaxSize(),
-//        contentAlignment = Center
-//    ) {
-//        if (state.isLoading) {
-//            CircularProgressIndicator()
-//        } else if (state.error != null) {
-//            Text(text = state.error, color = MaterialTheme.colors.error)
-//        }
-//    }
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Center
+    ) {
+        if (state.isLoading) {
+            CircularProgressIndicator()
+        } else if (state.error != null) {
+            Text(text = state.error, color = MaterialTheme.colors.error)
+        }
+    }
 }
