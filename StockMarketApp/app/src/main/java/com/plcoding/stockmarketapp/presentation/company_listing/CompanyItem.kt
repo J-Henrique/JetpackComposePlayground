@@ -22,8 +22,8 @@ fun CompanyItem(
         modifier = modifier,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Column(modifier = modifier.weight(1f)) {
-            Row(modifier = modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.weight(1f)) {
+            Row(modifier = Modifier.fillMaxWidth()) {
                 Text(
                     text = company.name,
                     fontWeight = FontWeight.SemiBold,
