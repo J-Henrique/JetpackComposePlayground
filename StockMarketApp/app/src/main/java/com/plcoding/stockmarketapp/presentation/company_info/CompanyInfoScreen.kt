@@ -27,19 +27,13 @@ fun CompanyInfoScreen(
     viewModel: CompanyInfoViewModel = hiltViewModel(),
 ) {
     val state = viewModel.state
-    if (state.error != null) {
+    if (state.error == null) {
        Column(
            modifier = Modifier
                .fillMaxSize()
                .background(DarkBlue)
                .padding(16.dp)
        ) {
-           Text(
-               text = "",
-               fontWeight = FontWeight.Bold,
-               overflow = TextOverflow.Ellipsis,
-               modifier = Modifier.fillMaxWidth()
-           )
            state.company?.let { company ->
                Text(
                    text = company.name,
