@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
+import com.plcoding.stockmarketapp.presentation.destinations.CompanyInfoScreenDestination
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 
@@ -47,7 +48,7 @@ fun CompanyListingScreen(
         )
         SwipeRefresh(
             state = swipeRefreshState,
-            onRefresh = { viewModel.onEvent(CompanyListingsEvent.OnRefresh)}
+            onRefresh = { viewModel.onEvent(CompanyListingsEvent.OnRefresh) }
         ) {
             LazyColumn(modifier = Modifier.fillMaxSize()) {
                 items(state.companies.size) { i ->
@@ -57,7 +58,9 @@ fun CompanyListingScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-
+                                navigator.navigate(
+                                    CompanyInfoScreenDestination(company.symbol)
+                                )
                             }
                             .padding(16.dp)
                     )
